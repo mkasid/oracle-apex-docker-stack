@@ -3,9 +3,9 @@ services:
     container_name: auto-xe-reg
     image: gvenzl/oracle-xe
     ports: 
-      - 1521:1521
+      - 1525:1521
     environment:
-      - ORACLE_PASSWORD=PLACEPASSWORDHERE
+      - ORACLE_PASSWORD=Test1234##
     volumes:
       - db-vol-reg:/opt/oracle/oradata
       - ./db_init_scripts:/container-entrypoint-initdb.d
